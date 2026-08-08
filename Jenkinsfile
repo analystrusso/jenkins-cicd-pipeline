@@ -75,7 +75,7 @@ pipeline {
                         sh 'git branch'
                         sh 'git config --list'
 
-                        sh 'git remote set-url origin https://${USER}:${PASS}@github.com/analystrusso//jenkins-cicd-pipeline.git'
+                        sh 'git remote set-url origin https://${USER}:${PASS}@github.com/analystrusso/jenkins-cicd-pipeline.git'
                         sh "git checkout -B ${env.BRANCH_NAME}"
                         sh "git fetch origin ${env.BRANCH_NAME}"
                         sh 'git add .'
@@ -87,6 +87,6 @@ pipeline {
                         
                 }
             }
-  1      }
+        }
     }
 } 
